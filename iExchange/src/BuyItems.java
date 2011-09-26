@@ -67,7 +67,7 @@ public class BuyItems{
 					return;
 				}
 				Item itemd = new Item(ID, amount);
-				if ((ID == 6) || (ID == 17) || (ID == 18) || (ID == 35) || (ID == 44) || (ID == 263) || (ID == 351) || (ID == 358)){
+				if ((ID == 6) || (ID == 17) || (ID == 18) || (ID == 35) || (ID == 44) || (ID == 98) || (ID == 263) || (ID == 351) || (ID == 358)){
 					damage = Integer.parseInt(Item[2]);
 					if (Item[3].contains(",")){
 						String[] unfuck = Item[3].split(",");

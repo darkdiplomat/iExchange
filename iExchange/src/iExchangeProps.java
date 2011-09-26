@@ -6,7 +6,6 @@ import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
 public class iExchangeProps {
 	static Logger log = Logger.getLogger("Minecraft");
 	static String SellItemPricesFile = "plugins/config/iExchange/SellItemPrices.txt";
@@ -14,31 +13,26 @@ public class iExchangeProps {
 	static String PropertiesFile = "plugins/config/iExchange/Properties.ini";
 	static String TradeFile = "plugins/config/iExchange/TradesPending.txt";
 	static String GroupFile = "plugins/config/iExchange/GroupPrices/GroupPricesREADME.txt";
-	static String ReNameItemsFile = "plugins/config/iExchange/Items.txt";
-	
+	static String ReNameItemsFile = "plugins/config/iExchange/Items.txt";	
 	static Boolean BuyEnabled = true;
 	static Boolean SellEnabled = true;
 	static Boolean TradeEnabled = false;
 	static Boolean GroupPrices = false;
 	static String SellEnabledString = SellEnabled.toString();
 	static String BuyEnabledString = BuyEnabled.toString();
-	static String GroupPricesString = GroupPrices.toString();
-	
+	static String GroupPricesString = GroupPrices.toString();	
 	public static boolean getBUYENABLED() {
 		BuyEnabled = Boolean.parseBoolean(BuyEnabledString);
 		return BuyEnabled;
 	}
-	
 	public static boolean getSELLENABLED() {
 		SellEnabled = Boolean.parseBoolean(SellEnabledString);
 		return SellEnabled;
 	}
-	
 	public static boolean getGROUPPRICESENABLED() {
 		GroupPrices = Boolean.parseBoolean(GroupPricesString);
 		return GroupPrices;
 	}
-	
 	public static void renameITEMSFILE(){
 		File itemsFile = new File(ReNameItemsFile);
 		File SellItemPrices = new File(SellItemPricesFile);
@@ -50,7 +44,6 @@ public class iExchangeProps {
 			}
 		}
 	}
-	
 	public static void loadSELLITEMPRICESFILE() {
 		File SellItemPrices = new File(SellItemPricesFile);
 		if (SellItemPrices.exists()) {
@@ -64,7 +57,6 @@ public class iExchangeProps {
 			createITEMSFILE();
 		}
 	}
-	
 	public static void createITEMSFILE() {
 		File SellItemPrices = new File(SellItemPricesFile);
 		try {
@@ -79,7 +71,6 @@ public class iExchangeProps {
 			log.log(Level.SEVERE, "[iExchange] Failed to CREATE: \"SellItemPrices.txt\", unable to continue.");
 		}
 	}
-	
 	public static void loadBUYITEMSFILE() {
 		File BuyItemPrices = new File(BuyItemPricesFile);
 		if (BuyItemPrices.exists()) {
@@ -93,7 +84,6 @@ public class iExchangeProps {
 			createBUYITEMSFILE();
 		}
 	}
-	
 	public static void createBUYITEMSFILE() {
 		File BuyItemPrices = new File(BuyItemPricesFile);
 		try {
@@ -108,7 +98,6 @@ public class iExchangeProps {
 			log.log(Level.SEVERE, "[iExchange] Failed to CREATE: \"BuyItemPrices.txt\" File, unable to continue.");
 		}
 	}
-
 	public static void loadPROPERTIESFILE() {
 		File Propertiesfile = new File(PropertiesFile);
 		if (Propertiesfile.exists()) {
@@ -125,7 +114,6 @@ public class iExchangeProps {
 			createPROPERTIESFILE();
 		}
 	}
-	
 	public static void createPROPERTIESFILE() {
 		File Propertiesfile = new File(PropertiesFile);
 		try {
@@ -142,7 +130,6 @@ public class iExchangeProps {
 			log.log(Level.SEVERE, "[iExchange] Failed to CREATE: \"Properties.ini\", unable to continue.");
 		}
 	}
-	
 	public static void loadGROUPSFILE() {
 		File Groupfile = new File(GroupFile);
 		if (Groupfile.exists()) {
@@ -156,7 +143,6 @@ public class iExchangeProps {
 			createGROUPSFILE();
 		}
 	}
-	
 	public static void createGROUPSFILE() {
 		File Groupfile = new File(GroupFile);
 		try {

@@ -1,6 +1,4 @@
-
 public class GroupBuySell {
-	
 	public static boolean onCommand(Player player, String[] split) {
 		if ((split[1].equalsIgnoreCase("sell") || (split[1].equalsIgnoreCase("s")))){
 			if (iExchangeProps.getSELLENABLED() == true){

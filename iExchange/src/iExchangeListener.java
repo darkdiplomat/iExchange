@@ -73,7 +73,7 @@ public class iExchangeListener extends PluginListener {
 							}
 						}
 						if (ID != 0){
-							if ((ID == 6) || (ID == 17) || (ID == 18) || (ID == 35) || (ID == 44) || (ID == 263) || (ID == 351) || (ID == 358)){
+							if ((ID == 6) || (ID == 17) || (ID == 18) || (ID == 35) || (ID == 44) || (ID == 98) || (ID == 263) || (ID == 351) || (ID == 358)){
 								if (SELLPRICESSPLIT[3].contains(",")){
 									String[] unfuck = SELLPRICESSPLIT[3].split(",");
 									SellPrice = "§2$" + unfuck[0];
@@ -105,7 +105,7 @@ public class iExchangeListener extends PluginListener {
 							}
 						}
 						if (ID != 0){
-							if ((ID == 6) || (ID == 17) || (ID == 18) || (ID == 35) || (ID == 44) || (ID == 263) || (ID == 351) || (ID == 358)){
+							if ((ID == 6) || (ID == 17) || (ID == 18) || (ID == 35) || (ID == 44) || (ID == 98) || (ID == 263) || (ID == 351) || (ID == 358)){
 								if (BUYPRICESSPLIT[3].contains(",")){
 									String[] unfuck = BUYPRICESSPLIT[3].split(",");
 									BuyPrice = "§2$" + unfuck[0];
@@ -183,7 +183,7 @@ public class iExchangeListener extends PluginListener {
 							}
 						}
 						if (ID != 0){
-							if ((ID == 6) || (ID == 17) || (ID == 18) || (ID == 35) || (ID == 44) || (ID == 263) || (ID == 351) || (ID == 358)){
+							if ((ID == 6) || (ID == 17) || (ID == 18) || (ID == 35) || (ID == 44) || (ID == 98) || (ID == 263) || (ID == 351) || (ID == 358)){
 								if (SELLPRICESSPLIT[3].contains(",")){
 									String[] unfuck = SELLPRICESSPLIT[3].split(",");
 									SellPrice = "§2$" + unfuck[0];
@@ -215,7 +215,7 @@ public class iExchangeListener extends PluginListener {
 							}
 						}
 						if (ID != 0){
-							if ((ID == 6) || (ID == 17) || (ID == 18) || (ID == 35) || (ID == 44) || (ID == 263) || (ID == 351) || (ID == 358)){
+							if ((ID == 6) || (ID == 17) || (ID == 18) || (ID == 35) || (ID == 44) || (ID == 98) || (ID == 263) || (ID == 351) || (ID == 358)){
 								if (BUYPRICESSPLIT[3].contains(",")){
 									String[] unfuck = BUYPRICESSPLIT[3].split(",");
 									BuyPrice = "§2$" + unfuck[0];

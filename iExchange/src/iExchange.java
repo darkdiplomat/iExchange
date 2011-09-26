@@ -8,13 +8,13 @@ import java.util.logging.Logger;
 public class iExchange extends Plugin {
 
 	String name = "iExchange";
-	String version = "1.5.1";
+	String version = "1.5.2";
 	String author = "Darkdiplomat";
 	static Logger log = Logger.getLogger("Minecraft");
 	
 	static final String updatrUrl = "http://www.visualillusionsent.net/canaryplugins/iExchange.updatr";
 	static final String updatrFileUrl = "http://www.visualillusionsent.net/canaryplugins/iExchange.jar";
-	static final String updatrNotes = "Fixed Item name bugs. Added when not specifying an amount it defaults to 1 (1.5.1 fixed the bug with tell prices)";
+	static final String updatrNotes = "Update for Minecraft 1.8.x - Block ID 98 switches on Damage Values added";
 
 	public void initialize() {
 		iExchangeListener listener = new iExchangeListener();
